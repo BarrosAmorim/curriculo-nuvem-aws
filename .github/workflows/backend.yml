@@ -101,10 +101,5 @@ jobs:
       - name: SAM Deploy
         run: |
           sam deploy \
-            --stack-name curriculo-nuvem-aws \
-            --region us-east-1 \
-            --s3-bucket sam-artifacts-rafael-2026 \
-            --s3-prefix curriculo-nuvem-aws \
-            --capabilities CAPABILITY_IAM \
             --no-confirm-changeset \
             --no-fail-on-empty-changeset
